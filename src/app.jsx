@@ -2,9 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import LocationDetails from './components/LocationDetails';
 
-const App = props => (
-  <LocationDetails city={props.location.city} country={props.location.country} />
-);
+const App = () => <LocationDetails />;
 App.propTypes = {
   location: PropTypes.shape({
     city: PropTypes.string,
